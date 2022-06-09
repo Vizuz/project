@@ -5,7 +5,7 @@
 {% block content %}
   <h1>{{ post.title }}</h1>
   <p class="date">
-    Published {{ post.publish }} by {{ post.author }}
+    Опубликовано {{ post.publish }} {{ post.author }}-ом
   </p>
   {{ post.body|linebreaks }}
   
@@ -18,15 +18,15 @@
 		{{ comment.body|linebreaks }}
 	</div>
 {% empty %}
-	<p>There are no comments yet.</p>
+	<p>Комментариев пока нет</p>
 {% endfor %}
 
   
-  <h2>Add a new comment</h2>
+  <h2>Добавить новый комментарий</h2>
 	<form action="{% url "blog:post_comment" post.id %}" method="post">
 		{{ form.as_p }}
 		{% csrf_token %}
-		<p><input type="submit" value="Add comment"></p>
+		<p><input type="submit" value="Добавить комментарий"></p>
 	</form>
 
 {% endblock %}

@@ -2,17 +2,21 @@ body {
     margin:0;
     padding:0;
     font-family:helvetica, sans-serif; 
+	background: url("../img/bg.jpg");
+	
 }
 
 a { 
     color:#00abff;
     text-decoration:none; 
+	color: #5cd3d0;
 }
 
 h1 { 
     font-weight:normal;
     border-bottom:1px solid #bbb;
     padding:0 0 10px 0;
+	color: #5cd3d0;
 }
 
 h2 {
@@ -32,8 +36,11 @@ h2 {
     padding:10px;
     background:#efefef; 
     height:100%;
+	background-color:#5cd3d0;
 }
-
+p {
+	color: #5cd3d0;
+}
 p.date { 
     color:#ccc;
     font-family: georgia, serif;
@@ -53,6 +60,11 @@ label {
     clear:both;
     color:#333;
     margin-bottom:4px; 
+}
+
+
+h2 {
+	color: #5cd3d0;
 }
 input, textarea { 
     clear:both;
